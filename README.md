@@ -4,6 +4,18 @@ O port Android do DOOM pede a pasta `romfs` dentro da pasta do jogo
 (ex.: `/storage/emulated/0/Download/DOOM Mobile/romfs`). Este script tira essa pasta
 de dentro do `.nsp` do jogo.
 
+## App Android (APK)
+
+Instale o `Extrator-romfs-DOOM.apk` (permita instalar de fontes desconhecidas) e:
+
+1. Toque em **Permitir acesso aos arquivos** e ative a permissão para o app.
+2. **Escolher o arquivo .nsp** e **Escolher o prod.keys**.
+3. Confira a pasta do jogo (padrão: `/storage/emulated/0/Download/DOOM Mobile`).
+4. Toque em **Extrair romfs**. Deixe a tela ligada até terminar.
+
+No port, escolha a pasta `DOOM Mobile`. O código do app fica em `android/`.
+Para compilar: `cd android && gradle assembleRelease` (precisa do Android SDK 34).
+
 ## O que você precisa
 
 1. O **NSP do jogo base** que você extraiu do seu cartucho ou da sua conta (NSP de update não serve).
